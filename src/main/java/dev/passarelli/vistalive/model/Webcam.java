@@ -23,5 +23,6 @@ public class Webcam {
     private String name;
     private String description;
     private String stream_url;
+    private String image_url;
 
 }

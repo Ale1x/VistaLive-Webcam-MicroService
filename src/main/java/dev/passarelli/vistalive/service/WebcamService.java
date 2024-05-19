@@ -46,7 +46,10 @@ public class WebcamService {
             existingWebcam.setName(newWebcamDetails.getName());
             existingWebcam.setDescription(newWebcamDetails.getDescription());
             existingWebcam.setStream_url(newWebcamDetails.getStream_url());
+            existingWebcam.setImage_url(newWebcamDetails.getImage_url());
+
             return webcamRepository.save(existingWebcam);
+
         }).orElseThrow(() -> new EntityNotFoundException("Webcam con ID " + id + " non trovata"));
     }
 }
